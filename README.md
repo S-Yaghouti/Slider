@@ -34,7 +34,7 @@ A lightweight and easy-to-use image slider built with HTML, CSS, and JavaScript.
 
 ### Note on Looping Functionality:
 
-- The Simple Image Slider is designed to loop through the images continuously. Ensure that your image list in `Slider.js` is set up correctly for seamless transitions. You can customize the transition speed and effects in the `style.css` file for a smoother experience.
+- The Simple Image Slider is designed to loop through the images continuously. Ensure that your image list in `Slider.js` is set up correctly for seamless transitions.
 
 ## Usage
 
