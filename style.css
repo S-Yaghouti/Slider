@@ -1,0 +1,220 @@
+/* ================================================================== >> Basic << */
+
+/* ------------------------------------------------------- >> * << */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    user-select: none;
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------- >> * << */
+
+/* -------------------------------------------- >> scroll style << */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0);
+}
+
+/* -------------------------------------------- >> scroll style << */
+
+/* ---------------------------------------------------- >> root << */
+:root {
+    --black: #282828;
+}
+
+/* ---------------------------------------------------- >> root << */
+
+/* ---------------------------------------------- >> All Father << */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-family: 'Comic Sans MS';
+    overflow: hidden;
+}
+
+/* ---------------------------------------------- >> All Father << */
+
+/* ================================================================== >> Basic << */
+
+/* ================================================================ >> Layer 1 << */
+.Layer1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    z-index: 0;
+}
+
+/* ------------------------------------------------- >> Body <<  */
+#BG_1 {
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+}
+
+/* ------------------------------------------------- >> Body <<  */
+
+/* ------------------------------------------------ >> Slider << */
+.SliderContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.Slider {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.SliderImg {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.IndicatorContainer {
+    width: max-content;
+    display: flex;
+    gap: clamp(0.5rem, 1vw, 2rem);
+    position: absolute;
+    z-index: 1;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 5%);
+}
+
+.Indicator {
+    width: clamp(0.75rem, 1vw, 2rem);
+    height: clamp(0.75rem, 1vw, 2rem);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.5s;
+}
+
+.Indicator.active {
+    width: clamp(1.5rem, 3vw, 4rem);
+    background-color: white;
+}
+
+/* ------------------------------------------------ >> Slider << */
+
+/* -------------------------------------------------- >> BTN <<  */
+.BTN {
+    cursor: pointer;
+    width: max-content;
+    height: max-content;
+    display: flex;
+    gap: clamp(0.5rem, 1vw, 2rem);
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: clamp(0.6rem, 0.75vw, 2rem);
+    border-radius: 10%;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: clamp(1rem, 2vw, 3rem);
+    transition: all 0.5s;
+}
+
+.BTN:hover,
+.BTN:active {
+    background-color: white;
+    color: var(--black);
+}
+
+#LeftBtn {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translate(-2%, -50%);
+}
+
+#LeftBtn iconify-icon {
+    transition: all 0.2s;
+}
+
+#LeftBtn:active iconify-icon {
+    transform: translateX(-20%);
+}
+
+#RightBtn {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translate(2%, -50%);
+}
+
+#RightBtn iconify-icon {
+    transition: all 0.2s;
+}
+
+#RightBtn:active iconify-icon {
+    transform: translateX(20%);
+}
+
+/* -------------------------------------------------- >> BTN <<  */
+
+/* ================================================================ >> Layer 1 << */
+
+/* ============================================================ >> Media Query << */
+
+/* ------------------------------------------------ >> 4K << */
+@media screen and (min-width: 1800px) {}
+
+/* ------------------------------------------------ >> 4K << */
+
+/* ------------------------------------------ >> L Laptop << */
+@media screen and (max-width: 1440px) {}
+
+/* ------------------------------------------ >> L Laptop << */
+
+/* ------------------------------------------ >> S Laptop << */
+@media screen and (max-width: 1024px) {}
+
+/* ------------------------------------------ >> S Laptop << */
+
+/* -------------------------------------------- >> tablet << */
+@media screen and (max-width: 768px) {}
+
+/* -------------------------------------------- >> tablet << */
+
+/* ------------------------------------------ >> L mobile << */
+@media screen and (max-width: 425px) {
+
+    #LeftBtn {
+        top: 90%;
+        left: 2%;
+        transform: translate(-2%, -90%);
+    }
+
+    #RightBtn {
+        top: 90%;
+        right: 2%;
+        transform: translate(2%, -90%);
+    }
+}
+
+/* ------------------------------------------ >> L mobile << */
+
+/* ------------------------------------------ >> S mobile << */
+@media screen and (max-width: 320px) {}
+
+/* ------------------------------------------ >> S mobile << */
+
+/* ============================================================ >> Media Query << */
