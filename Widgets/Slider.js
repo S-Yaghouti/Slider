@@ -117,19 +117,26 @@ export function Slider() {
     true,
     LeftListener
   );
+  //
+  SlideToLeft.widget.classList.add("remove");
+  //
   // ------------------------------------------- > CL <
   //
   // -------------------------------------------- > L <
   function LeftListener() {
     //
     const imageWidth = Slider.offsetWidth; // Width of each image (slider container width)
-    if (currentIndex === 0) {
-      currentIndex = totalImages - 1; // Loop back to last image if at the first image
-    } else {
-      currentIndex--;
-    }
-    Slider.scrollLeft = currentIndex * imageWidth; // Scroll to the left by one image width
+    Slider.scrollLeft -= imageWidth; // Scroll to the left by one image width
+    currentIndex = Math.max(0, currentIndex - 1); // Ensure index stays within bounds
+    //
     IndicatorManager(); // update indicator
+    //
+    if (currentIndex == 0) {
+      SlideToLeft.widget.classList.add("remove");
+    } else {
+      SlideToRight.widget.classList.remove("remove");
+      SlideToLeft.widget.classList.remove("remove");
+    }
     //
   }
   // -------------------------------------------- > L <
@@ -158,13 +165,18 @@ export function Slider() {
   function RightListener() {
     //
     const imageWidth = Slider.offsetWidth; // Width of each image (slider container width)
-    if (currentIndex === totalImages - 1) {
-      currentIndex = 0; // Loop back to first image if at the last image
-    } else {
-      currentIndex++;
-    }
-    Slider.scrollLeft = currentIndex * imageWidth; // Scroll to the right by one image width
+    Slider.scrollLeft += imageWidth; // Scroll to the right by one image width
+    currentIndex = Math.min(totalImages - 1, currentIndex + 1); // Ensure index stays within bounds
+    //
     IndicatorManager(); // update indicator
+    //
+    if (currentIndex == totalImages - 1) {
+      SlideToRight.widget.classList.add("remove");
+    } else {
+      SlideToRight.widget.classList.remove("remove");
+      SlideToLeft.widget.classList.remove("remove");
+    }
+    //
   }
   // -------------------------------------------- > L <
   //
