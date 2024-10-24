@@ -1,5 +1,5 @@
 // ============================================================== >> Imports <<
-import { BTN } from "./BTN/BTN.js";
+import { BTN } from "./BTN.js";
 // ============================================================== >> Imports <<
 //
 // ========================================================== >> Definitions <<
@@ -20,13 +20,13 @@ import { BTN } from "./BTN/BTN.js";
 //
 // ================================================================= >> Data <<
 const Images = [
-  "./images/1.jpg",
-  "./images/2.jpg",
-  "./images/3.jpg",
-  "./images/4.jpg",
-  "./images/5.jpg",
-  "./images/6.jpg",
-  "./images/7.jpg",
+  "./../assets/images/1.jpg",
+  "./../assets/images/2.jpg",
+  "./../assets/images/3.jpg",
+  "./../assets/images/4.jpg",
+  "./../assets/images/5.jpg",
+  "./../assets/images/6.jpg",
+  "./../assets/images/7.jpg",
 ];
 // ================================================================= >> Data <<
 //

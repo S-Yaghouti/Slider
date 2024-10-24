@@ -1,15 +1,15 @@
 # **Simple Image Slider**
 
-A lightweight and easy-to-use image slider built with HTML, CSS, and JavaScript. This slider allows you to showcase images in a responsive and interactive manner, enhancing the visual experience of your website.
+A lightweight and easy-to-use image slider built with HTML, CSS, and JavaScript. This slider enables you to showcase images in a responsive and interactive way, enhancing the visual appeal of your website.
 
-![Alt text](images/Screenshot.jpg)
+<img src="./assets/video/preview.gif" alt='Simple Image Slider'>
 
 ## Features
 
-- Simple Integration: Easy to add to any webpage with minimal setup.
-- Customizable Design: Modify the look and feel with your own CSS.
-- Lightweight: No dependencies on external libraries or frameworks.
-- Cross-Browser Compatibility: Works on all modern browsers.
+- **Simple Integration**: Easily add to any webpage with minimal setup.
+- **Customizable Design**: Adjust the look and feel with your own CSS.
+- **Lightweight**: No dependencies on external libraries or frameworks.
+- **Cross-Browser Compatibility**: Works on all modern browsers.
 
 ## Related Projects
 
@@ -22,7 +22,7 @@ A lightweight and easy-to-use image slider built with HTML, CSS, and JavaScript.
 1. Download the Files: Clone or download the repository to your local machine.
 2. **Serve the `index.html` File**: To view the slider in action, you’ll need to run a local server. Here are a few options:
 
-   - **Using Live Server**: If you're using Visual Studio Code, you can install the [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer). Simply open the `index.html` file and click on "Open with Live Server."
+   - **Using Live Server**: If you're using Visual Studio Code, install the [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer). Open the `index.html` file and click on "Open with Live Server."
 
    - **Using XAMPP**: Download and install [XAMPP](https://www.apachefriends.org/index.html). Move the project folder to the `htdocs` directory, then start the Apache server from the XAMPP Control Panel. Access the slider via `http://localhost/your-folder-name/index.html`.
 
@@ -34,21 +34,21 @@ A lightweight and easy-to-use image slider built with HTML, CSS, and JavaScript.
 
 ### Note on Looping Functionality:
 
-- The Simple Image Slider is designed to loop through the images continuously. Ensure that your image list in `Slider.js` is set up correctly for seamless transitions.
+- The Simple Image Slider is designed to loop through the images continuously. Make sure that your image list in `Slider.js` is set up correctly to ensure seamless transitions.
 
 ## Usage
 
-### First you need to know what is inside Widgets folder :
+### Overview of the Widgets Folder
 
-- BTN / BTN.js: A simple button for the image slider.
-- Slider.js : exported slider widget and then imported in scipt.js file, You can imported in any js file you want.
+- [BTN.js](https://github.com/S-Yaghouti/BTN): A simple button for the image slider.
+- Slider.js : Exports the slider widget, which is imported into `script.js`. You can import it into any JavaScript file as needed.
 
-### Now, let me explain how the Slider.js file works:
+### Understanding the Slider.js File
 
-1. Imported simple BTN.
-2. A breif explenation about used shortcuts.
-3. Images list ( you can use fetch if needed ).
-4. Exported slider widget.
+1. The Simple BTN is imported.
+2. A brief explanation of used shortcuts.
+3. The images list (you can use `fetch` if needed).
+4. The slider widget is exported.
 
 ## Credits & Contact
 
