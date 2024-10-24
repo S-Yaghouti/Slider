@@ -50,6 +50,18 @@ A lightweight and easy-to-use image slider built with HTML, CSS, and JavaScript.
 3. The images list (you can use `fetch` if needed).
 4. The slider widget is exported.
 
+## Contribution
+
+**Contributions are welcome! If you'd like to contribute to this project, please follow these steps:**
+
+1.  Fork the repository.
+2.  Create a new branch for your feature or bug fix `(git checkout -b feature-name)`.
+3.  Make your changes and commit them `(git commit -m 'Add some feature')`.
+4.  Push to the branch `(git push origin feature-name)`.
+5.  Open a pull request for review.
+
+    Feel free to report any issues or suggest enhancements by creating a new issue in the repository.
+
 ## Credits & Contact
 
 **Creator**: Subhaan Yaghouti - Maintainer of the project.  
