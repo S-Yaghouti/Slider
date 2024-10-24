@@ -2,7 +2,7 @@
 
 A lightweight and easy-to-use image slider built with HTML, CSS, and JavaScript. This slider enables you to showcase images in a responsive and interactive way, enhancing the visual appeal of your website.
 
-<img src="./assets/video/preview.gif" alt='Simple Image Slider'>
+<img src="./images/Screenshot.jpg" alt='Simple Image Slider'>
 
 ## Features
 
